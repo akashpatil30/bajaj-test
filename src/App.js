@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Partytown } from '@builder.io/partytown';
+import { Partytown } from '@builder.io/partytown/react';
 import './App.css';
 import Home from './component/Home';
 import Loans from './component/Loans';
