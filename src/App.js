@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
+import Home from './component/Home';
+import Loans from './component/Loans';
+import Aboutus from './component/Aboutus';
+import ButtonAppBar from './component/Buttonappbar';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -32,17 +37,25 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Welcome to My First React App</h1>
-        <p>Counter: {count}</p>
-        <div>
-          <button onClick={handleDecrement}>-</button>
-          <button onClick={handleIncrement}>+</button>
-          <button onClick={handleReset}>Reset</button>
-        </div>
-      </header>
-    </div>
+    // <div className="App">
+    //   <header className="App-header">
+    //     <h1>Welcome to My First React App</h1>
+    //     <p>Counter: {count}</p>
+    //     <div>
+    //       <button onClick={handleDecrement}>-</button>
+    //       <button onClick={handleIncrement}>+</button>
+    //       <button onClick={handleReset}>Reset</button>
+    //     </div>
+    //   </header>
+    // </div>
+    <Router>
+      <ButtonAppBar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/loans" element={<Loans />} />
+        <Route path="/aboutus" element={<Aboutus />} /> 
+      </Routes>
+    </Router>
   );
 }
 
