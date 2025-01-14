@@ -20,7 +20,7 @@ const Loans = () => {
         <Grid item xs={12} sm={6} md={4}> 
           <Card sx={{ minWidth: 150 }}> 
             <Box sx={{ p: 2 }}>
-              <img src={Persoanloan} height={"50px"} width={ "100px"} />
+              <img src={Persoanloan} height={"50px"} width={ "100px"} alt="Personal loan"/>
               <h4>Personal Loan</h4>
             </Box>
           </Card>

@@ -23,7 +23,7 @@ const ButtonAppBar = () => {
             >
               <MenuIcon />
             </IconButton> */}
-            <img src={logo} height={"50px"} />
+            <img src={logo} height={"50px"} alt="Bajaj Finserv"/>
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
               Bajaj Finserv
             </Typography>
