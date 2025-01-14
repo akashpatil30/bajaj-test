@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Home from './component/Home';
@@ -7,34 +7,34 @@ import Aboutus from './component/Aboutus';
 import ButtonAppBar from './component/Buttonappbar';
 
 function App() {
-  const [count, setCount] = useState(0);
+  // const [count, setCount] = useState(0);
 
   // Custom event tracking function
-  const trackEvent = (action) => {
-    // Check if gtag is available (Google Analytics script is loaded)
-    if (window.gtag) {
-      window.gtag('event', action, {
-        'event_category': 'User Interaction',
-        'event_label': 'Counter Button',
-        'value': count
-      });
-    }
-  };
+  // const trackEvent = (action) => {
+  //   // Check if gtag is available (Google Analytics script is loaded)
+  //   if (window.gtag) {
+  //     window.gtag('event', action, {
+  //       'event_category': 'User Interaction',
+  //       'event_label': 'Counter Button',
+  //       'value': count
+  //     });
+  //   }
+  // };
 
-  const handleIncrement = () => {
-    setCount(prevCount => prevCount + 1);
-    trackEvent('increment');
-  };
+  // const handleIncrement = () => {
+  //   setCount(prevCount => prevCount + 1);
+  //   trackEvent('increment');
+  // };
 
-  const handleDecrement = () => {
-    setCount(prevCount => prevCount - 1);
-    trackEvent('decrement');
-  };
+  // const handleDecrement = () => {
+  //   setCount(prevCount => prevCount - 1);
+  //   trackEvent('decrement');
+  // };
 
-  const handleReset = () => {
-    setCount(0);
-    trackEvent('reset');
-  };
+  // const handleReset = () => {
+  //   setCount(0);
+  //   trackEvent('reset');
+  // };
 
   return (
     // <div className="App">
