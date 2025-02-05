@@ -50,7 +50,7 @@ function App() {
     //   </header>
     // </div>
     <div>
-    <Partytown forward={['dataLayer.push']} />
+    {/* <Partytown forward={['dataLayer.push']} />
     <script
         type="text/partytown"
         dangerouslySetInnerHTML={{
@@ -62,7 +62,7 @@ function App() {
             })(window,document,'script','dataLayer','G-VF94F4403W');
           `,
         }}
-      ></script>
+      ></script> */}
     <Router>
       <ButtonAppBar />
       <Routes>
