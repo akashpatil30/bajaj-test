@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-// import { Partytown } from '@builder.io/partytown/react';
+import { Partytown } from '@builder.io/partytown/react';
 import './App.css';
 import Home from './component/Home';
 import Loans from './component/Loans';
@@ -50,7 +50,7 @@ function App() {
     //   </header>
     // </div>
     <div>
-    {/* <Partytown forward={['dataLayer.push']} />
+    <Partytown forward={['dataLayer.push']} />
     <script
         type="text/partytown"
         dangerouslySetInnerHTML={{
@@ -62,7 +62,7 @@ function App() {
             })(window,document,'script','dataLayer','G-VF94F4403W');
           `,
         }}
-      ></script> */}
+      ></script>
     <Router>
       <ButtonAppBar />
       <Routes>
