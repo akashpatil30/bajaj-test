@@ -26,7 +26,15 @@
     -->
 
     <!-- Google tag (gtag.js) -->
-<script type="text/partytown" src="https://www.googletagmanager.com/gtag/js?id=G-VF94F4403W"></script>
+<!-- <script type="text/partytown" src="https://www.googletagmanager.com/gtag/js?id=G-VF94F4403W"></script> -->
+ <script>
+  partytown={
+    lib:'/~partytown',
+    debug: true,
+    forword: ['dataLayer.push']
+  };
+ </script>
+ <script src="/~partytown/partytown.js"></script>
 <script type="text/partytown">
    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
